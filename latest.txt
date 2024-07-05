@@ -1,0 +1,19 @@
+postman:
+export coll
+avoid data from env and global,
+go to loc
+newman run coll_name
+
+
+
+
+git installation & wrking
+1.github account 
+2.new repository from github
+3.git init
+4.add(stage environment), commit(local env), push(central env)
+5.git status
+6.to chnage branch-git branch -M main
+7.to show branch-git branch
+8.git remote add origin https://github.com/shilpa310801/InternalSLKProject.git
+git push origin msater/main
