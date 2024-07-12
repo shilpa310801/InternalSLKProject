@@ -1,0 +1,15 @@
+Token for authenticating to github instead of authenticating directly through password from git command :
+github acct
+log
+settings
+dev settings
+token
+gen new token
+copy token
+
+git clone __.git
+git restore -- staged            - whatever is added to stage , to remove it
+git branch -a   ->all branches will show up
+git pull remo branch
+git checkout 
+

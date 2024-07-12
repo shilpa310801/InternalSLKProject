@@ -1,0 +1,92 @@
+::::::::::::::::::::::postman:(assignment)::::::::::::::::::::::::
+export coll
+avoid data from env and global,
+go to loc
+newman run coll_name
+
+::::::::::::::::::::::::git installation & wrking:::::::::::::::::::::::::
+1.github account 
+2.new repository from github
+3.git init
+4.add(stage environment), commit(local env), push(central env)
+5.git status
+6.to chnage branch-git branch -M main
+7.to show branch-git branch
+8.git remote add origin https://github.com/shilpa310801/InternalSLKProject.git
+9.git push origin msater/main
+
+:::::::::::::::::::::::newman:::::::::::::::::::::::::
+newman -v
+newman run Practice.postman_collection.json (to run exported json file in git bash)
+
+note:::::::::::::
+//classs, instance, methods should be discussed 
+//postman can be integrated with cloud
+//newman
+
+::::::::::::::::::::::::::::::::::Token for authenticating to github instead of authenticating directly through password from git command ::::::::::::::::::::::::::::::::::::::::::::::
+github acct
+log
+settings
+dev settings
+token
+gen new token
+copy token
+
+git clone __.git
+git restore -- staged            - whatever is added to stage , to remove it
+git branch -a   ->all branches will show up
+git pull remo branch
+git checkout 
+
+:::::::::::::::::::::::::::::::how to exec env json , move from collection location to env loca ::::::::::::::::::::::
+newman run --environment ../DataEnv/TEST.postman_environment.json Practice.postman_collection.json
+use :https://learning.postman.com/docs/collections/using-newman-cli/newman-options/               for diff options 
+for global:  newman run --globals ..\global\workspace.postman_globals.json Practice.postman_collection.json
+newman run Practice.postman_collection.json --env-var "URL=https://reqres.in"
+
+note:newman can also be exec out of postman
+
+********postman with ci/cd**********
+:::::::::::::::::::::::::::::install jenkins and java version::::::::::::::::::::::::::
+pre req:java -v
+JAVA_HOME path shud be set
+
+1.download Jenkins.war
+2.Run jenkins  
+3.edit var in windows
+4.edit on path (below section)
+5.new path (copy the updated java version path here)
+6.open new cmd prompt to see updated java version
+
+
+
+path whre jenkins is downloaded
+to check path :::::::::::::::::dir 
+to run jenkins file ::::::::::::::::::::::java -jar jenkins.war
+which process is used already::::::::::::::::::: netstat -a -n -o | find "8080"
+to kill any process if its used :::::::::::::::::::::::::taskkill /F /PID process number   (administrator cmd)
+password got in cmd::::::::::::::::::::::::::dade50f08f9c49f5bda07034fd2b0a90
+next google: localhost 8080
+setup required
+and ur jenkins dashboard is set
+username::::::::::::::::::::::::::admin
+password::::::::::::::admin@123
+
+::::::::::::local path ::::::::::::::::::::
+folder
+mkdir t1
+cd t1
+mkdir t2
+t2 in t1
+or
+
+::::::::::::jenkins -creating folder inside a folder::::::::::::
+create freestyle project
+write code in build steps
+and configure in jenkins
+and build now and 
+check console output for the taks segregation 
+
+
+

@@ -1,0 +1,34 @@
+rm -rf test:::::::::::::::: to remove forcefully files
+rm -d test::::::::::::::::::: to remove dir
+mkdir
+cd
+ls -l
+ls
+touch file1 :::::::::::::::::::new file created 
+ls
+echo "helo"
+echo "hello">> file1   ::::::::::::::::::::::print hello in file (file1)
+to view file     ::::::::::::::::::less file1
+
+
+vi editor is used ::::::::::vi
+ ::::::::Type i(insert)
+:::::::::esc
+:::::::type :wq!(quit after writing)
+:::::::::::::::less
+ ::::::::::::  :q!(wihout wriitng quit it )
+::::::::::::::::::::::::mv file1 ../dir2(move file to dir2)                               
+
+
+
+jenkins to pipeline
+stages of pieline:
+clean
+compile
+run 
+
+in batch script inside syntax of pipeline
+d:
+cd d:\
+del temp
+
